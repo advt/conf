@@ -1,4 +1,4 @@
-conf
+Configuration
 ====
 
-Repository for my conf
+This is a repository for some conf files

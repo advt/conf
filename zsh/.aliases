@@ -1,0 +1,50 @@
+################
+# 1. Les alias #
+################
+# Gestion du 'ls' : couleur & ne touche pas aux accents
+alias ls='ls --classify --tabsize=0 --literal --color=auto --show-control-chars --human-readable'
+alias maple='/stock/maple13/bin/maple'
+alias xmaple='/stock/maple13/bin/xmaple'
+# Demande confirmation avant d'écraser un fichier
+alias cp='cp --interactive'
+alias mv='mv --interactive'
+alias rm='rm --interactive'
+
+# Raccourcis pour 'ls'
+alias ll='ls -llR'
+alias la='ls -A'
+alias l='ls -l'
+# Quelques alias pratiques
+alias ps='ps -AF'
+alias c='clear'
+alias less='less --quiet'
+alias s='cd ..'
+alias df='df --human-readable'
+alias du='du --human-readable'
+alias m='mutt -y'
+alias md='mkdir'
+alias rd='rmdir'
+alias upgrade='apt-get update && apt-get upgrade && apt-get clean'
+alias ls='ls --color=auto'
+alias ps='ps -AF'
+alias upsys='sudo aptitude update ;sudo aptitude safe-upgrade'
+alias ins='sudo aptitude install'
+alias destr='shred -n 35 -zuv'
+alias psautr='ps xaf'
+alias yakikiecoute=' lsof -i -n | grep -i LISTEN'
+alias enemy='cd ~/enemy-territory ;metacity --replace;./et.x86'
+alias littre='~/deb/littre/Littre'
+alias rf='rm -rf'
+
+#######################################
+alias truecrypt='sudo truecrypt'
+alias tarball='tar cvjf'
+alias sl='ls'
+alias e='emacs-snapshot-nox'
+alias nsc='~/script/nsc/nsc'
+alias uskeyboard='setxkbmap us && setxkbmap -option compose:rctrl'
+#########
+# PATH
+#########
+PATH=${HOME}/bin:${HOME}/.gem/ruby/2.0.0/bin:${HOME}/ING1/utils/bison-3.0.2/src:${PATH}
+export PATH
